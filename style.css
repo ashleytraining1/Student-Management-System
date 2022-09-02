@@ -32,7 +32,7 @@ body{
 .box .input{
     position: relative;
 }
- .box .input-bx input{
+ .box #studentForm input{
     color: #000000;
     width: 100%;
     padding: 10px;
@@ -45,7 +45,7 @@ body{
     margin-top: 10px;
 } 
 
- .box .input-bx label{  
+ .box #studentForm label{  
     top: 20px;
     left: 0;
     color: #000000;
