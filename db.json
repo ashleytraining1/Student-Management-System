@@ -1,0 +1,34 @@
+{
+"records": [
+    {
+        "id":1,
+        "title": "Username",
+        "summary":"The student's name"
+    },
+    {
+        "id":2,
+        "title":"ID No",
+        "summary":"ID No of the student"
+    },
+    {
+        "id":3,
+        "title":"Email",
+        "summary":"The email of the student"
+    },
+    {
+        "id":4,
+        "title":"Class",
+        "summary":"The total number of classes of the student"
+    },
+    {
+        "id":5,
+        "title":"Roll No",
+        "summary":"The Roll No of student"
+    },
+    {
+        "id":6,
+        "title":"Sponser Name",
+        "summary":"The name of student's sponser"
+    }
+]
+}
