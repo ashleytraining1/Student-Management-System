@@ -143,8 +143,7 @@ h1{
     margin-left: 20px;
 }
 .table thead{
-    background-color: #ee2828;
-    text-align: centre;
+    text-align: centre; 
 }
 .table thead th{
     font-size: 20px;

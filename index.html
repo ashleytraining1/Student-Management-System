@@ -8,16 +8,12 @@
 <!-- my title -->
 <title>Website Design</title>
       
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
-
-
     </head>
     <body>
-        
-
+    
       <div class="hero">
         
         <nav>
@@ -35,45 +31,25 @@
             <div class="left">
                 <div class="box">
                     <h4>Student Form</h4>
-                    <form id="studentForm">
-                        
+                    <form method="post" id="studentForm">
                     
                             <label>Username</label>
-                            <input type="text" id="Username" required/>
+                            <input type="text" id="username" required/>
                             
-                
-            
-                        
-                            <label>ID Number</label>
-                            <input type="text" id="Student ID Number" required/>
-                            
-                        
-            
+                            <label>Identity Number</label>
+                            <input type="text" id="studentIdentityNumber" required/>
                         
                             <label>Email</label>
-                            <input type="email" id="Student Email"  required/>
-                            
-            
+                            <input type="email" id="studentEmail"  required/>
                         
-            
-                        
-                            <label>Class</label>
-                            <input type="number" id="Student Class"  required/>
+                            <label>Total Class</label>
+                            <input type="number" id="totalClass"  required/>
                            
-                        
-            
-                        
-            
-                        
                             <label>Roll No</label>
-                            <input type="number" id="Roll No"  required/>
+                            <input type="number" id="rollNo"  required/>
                            
-            
-                        
-
-                    
                             <label>Sponser Name</label>
-                            <input type="text" id="Sponsers Name"  required/>
+                            <input type="text" id="sponserName"  required/>
                             
                         
             
@@ -90,29 +66,28 @@
                         <thead>
                             <tr>
                                 <th>Username</th>
-                                <th>ID Number</th>
+                                <th>Identity Number</th>
                                 <th>Email</th>
-                                <th>Class</th>
+                                <th>Total Class</th>
                                 <th>Roll No</th>
                                 <th>Sponser Name</th>
                             </tr>
                         </thead>
+
+                        <tbody>
+                            
+                        </tbody>
                        
                     </table>
                 </div>
             </div>
         </div>
           
-        
       </div>
-
-       
 
     </body>
 
     <!-- linking index.js to index.html -->
  <script src="index.js"></script>
-    
-        
     
 </html>
