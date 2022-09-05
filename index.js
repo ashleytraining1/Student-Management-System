@@ -34,9 +34,15 @@ renderRecords(myFormInputs);
                           <td>${record.idNumber}</td>
                           <td>${record.email}</td>
                           <td>${record.class}</td>
-                          <td>${record.rollNo}</td>
-                          <td>${record.sponserName}</td>`
-            
+                          <td>${record.rollNumber}</td>
+                          <td>${record.sponserName}</td>
+                          <i class="fa-solid fa-trash-can"></i>`
+                
+            //Delete a record
+userInfo.querySelector(".fa-trash-can").addEventListener('click', () => {
+ userInfo.remove();
+ deleteRecord(record.id);
+})
             document.querySelector('tbody').append(userInfo);  
  }
 
@@ -58,6 +64,20 @@ function newRecord(myFormInputs){
     .then(response => response.json())
     .then(record => console.log(record));
 }
+//deleting a record
+function deleteRecord(id){
+    fetch(`${apiHost}/${id}`,{
+        method: "DELETE",
+    headers: {
+        "Content-Type": "application/json"
+    }
+    })
+    .then(response => response.json())
+    .then(record => console.log(record));
+    
+
+}
+
  document.addEventListener("DOMContentLoaded", function(){
     fetchRecords();
  })

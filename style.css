@@ -154,7 +154,7 @@ h1{
     padding: 12px;
     vertical-align: top;
     border: 1px solid#dddddd;
-    text-align: left;
+    text-align:center;
 }
 tr:nth-child(even),table thead>tr{
     background-color: #ffffff;
@@ -180,6 +180,11 @@ a{
     color: #000000;
     
 }
+.fa-trash-can{
+    color: red;
+    margin-left: 30px;
+    cursor: pointer;
+}
 td{
-    background-color: #ffffff;
+    text-align: center;
 }
