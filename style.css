@@ -149,7 +149,7 @@ h1{
     font-size: 20px;
     font-weight: 600;
     letter-spacing: o.35px;
-    color: #ffffff;
+    color: #000000;
     opacity: 1;
     padding: 12px;
     vertical-align: top;
@@ -157,7 +157,7 @@ h1{
     text-align: left;
 }
 tr:nth-child(even),table thead>tr{
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .wrapall{
     width: 100%;

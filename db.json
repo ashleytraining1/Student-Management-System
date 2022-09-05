@@ -1,62 +1,67 @@
 {
-"records": [
+  "records": [
     {
-        "id":1,
-        "username": "Lucy",
-        "idNumber":"4544669",
-        "email": "lucy4@gmail.com",
-        "class": "two",
-        "rollNumber": "234",
-        "sponserName": "James Parick"
+      "id": 1,
+      "username": "Lucy",
+      "idNumber": "4544669",
+      "email": "lucy4@gmail.com",
+      "class": "2",
+      "rollNumber": "234",
+      "sponserName": "James Parick"
     },
     {
-        "id":2,
-        "username": "Angela",
-        "idNumber":"4534269",
-        "email": "angela1@gmail.com",
-        "class": "four",
-        "rollNumber": "432",
-        "sponserName": "Macharia Jk"
+      "id": 2,
+      "username": "Angela",
+      "idNumber": "4534269",
+      "email": "angela1@gmail.com",
+      "class": "4",
+      "rollNumber": "432",
+      "sponserName": "Macharia Jk"
     },
     {
-        "id":3,
-        "username": "Yvonne",
-        "idNumber":"3534269",
-        "email": "yvonnea1@gmail.com",
-        "class": "three",
-        "rollNumber": "332",
-        "sponserName": "Thomas Egan"
-      
+      "id": 3,
+      "username": "Yvonne",
+      "idNumber": "3534269",
+      "email": "yvonnea1@gmail.com",
+      "class": "3",
+      "rollNumber": "332",
+      "sponserName": "Thomas Egan"
     },
     {
-        "id":4,
-        "username": "Wafula ",
-        "idNumber":"4534299",
-        "email": "wafula@gmail.com",
-        "class": "seven",
-        "rollNumber": "444",
-        "sponserName": "Otieno Micheal"
-      
+      "id": 4,
+      "username": "Wafula ",
+      "idNumber": "4534299",
+      "email": "wafula@gmail.com",
+      "class": "7",
+      "rollNumber": "444",
+      "sponserName": "Otieno Micheal"
     },
     {
-        "id":5,
-        "username": "Kingstone",
-        "idNumber":"5535269",
-        "email": "kings@gmail.com",
-        "class": "five",
-        "rollNumber": "234",
-        "sponserName": "Laureen Maina"
-      
+      "id": 5,
+      "username": "Kingstone",
+      "idNumber": "5535269",
+      "email": "kings@gmail.com",
+      "class": "5",
+      "rollNumber": "234",
+      "sponserName": "Laureen Maina"
     },
     {
-        "id":6,
-        "username": "Tabitha",
-        "idNumber":"2434269",
-        "email": "gile@gmail.com",
-        "class": "nine",
-        "rollNumber": "111",
-        "sponserName": "Masawe Pendo"
-       
+      "id": 6,
+      "username": "Tabitha",
+      "idNumber": "2434269",
+      "email": "gile@gmail.com",
+      "class": "9",
+      "rollNumber": "111",
+      "sponserName": "Masawe Pendo"
+    },
+    {
+      "username": "Ashley",
+      "idNumber": "2345656",
+      "email": "ashley@gmail.com",
+      "class": "5",
+      "rollNumber": "456",
+      "sponserName": "Macharia",
+      "id": 7
     }
-]
+  ]
 }

@@ -1,33 +1,65 @@
-const apiHost = "http://localhost:3000"
+
+const apiHost = "http://localhost:5000/records"
 
 const form = document.getElementById("studentForm")
 console.log(form);
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()
+    let myFormInputs = {
+  username: event.target.querySelector("#username").value,
+  idNumber: event.target.querySelector("#studentIDNumber").value,
+  email: event.target.querySelector("#studentEmail").value,
+  class: event.target.querySelector("#totalClass").value,
+  rollNumber: event.target.querySelector("#rollNo").value,
+  sponserName: event.target.querySelector("#sponserName").value
+    }
+event.target.reset();
+console.log(myFormInputs);
+newRecord(myFormInputs);
+renderRecords(myFormInputs);
+ })
 
-    console.log("event.target:",event.target)
-    
- let username = event.target.querySelector("#username").value;
- let identityNumber = event.target.querySelector("#identityNumber").value;
- let email = event.target.querySelector("#email").value;
- let totalClass = event.target.querySelector("#totalClass").value;
- let rollNo = event.target.querySelector("#rollNo").value;
- let sponserName = event.target.querySelector("#sponserName").value;
+ //fetch records
 
-console.log(event.target)
+ function fetchRecords(){
+    return fetch(`${apiHost}`)
+    .then(response => response.json())
+ }
 
-  const userInfo = document.createElement('tr')
-userInfo.innerHTML = `<td>${username}</td>
-                      <td>${identityNumber}</td>
-                      <td>${email}</td>
-                      <td>${totalClass}</td>
-                      <td>${rollNo}</td>
-                      <td>${sponserName}</td>`
-        
-        document.querySelector('tbody').append(userInfo);
+ //Render Records to the DOM
+ function renderRecords(record) {
+    const userInfo = document.createElement('tr')
+    userInfo.innerHTML = `<td>${record.username}</td>
+                          <td>${record.idNumber}</td>
+                          <td>${record.email}</td>
+                          <td>${record.class}</td>
+                          <td>${record.rollNo}</td>
+                          <td>${record.sponserName}</td>`
+            
+            document.querySelector('tbody').append(userInfo);  
+ }
 
-        
+ fetchRecords().then(records => {
+    records.forEach((record => {
+        renderRecords(record)
+    }))
+ })
+
+ //creating a new record
+function newRecord(myFormInputs){
+    fetch(`${apiHost}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(myFormInputs)
+    })
+    .then(response => response.json())
+    .then(record => console.log(record));
+}
+ document.addEventListener("DOMContentLoaded", function(){
+    fetchRecords();
  })
  
 
