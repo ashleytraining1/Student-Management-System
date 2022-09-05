@@ -1,7 +1,7 @@
 # Student-Management-System
 
 write your code on index.js where your API host should be
-(https://localhost:5000).
+(https://localhost:3000).
 
 ##Deliverables
 As a user, I can

@@ -1,4 +1,4 @@
-const apiHost = "http://localhost:5000/records"
+const apiHost = "http://localhost:3000"
 
 const form = document.getElementById("studentForm")
 console.log(form);
@@ -6,14 +6,16 @@ console.log(form);
 form.addEventListener("submit", (event) => {
     event.preventDefault()
 
+    console.log("event.target:",event.target)
     
-       let username = event.target.querySelector("#username").value
-        let identityNumber = event.target.querySelector("#identityNumber").value
-        let email = event.target.querySelector("#email").value
-        let totalClass = event.target.querySelector("#totalClass").value
-        let rollNo = event.target.querySelector("#rollNo").value
-       let sponserName = event.target.querySelector("#sponserName").value
+ let username = event.target.querySelector("#username").value;
+ let identityNumber = event.target.querySelector("#identityNumber").value;
+ let email = event.target.querySelector("#email").value;
+ let totalClass = event.target.querySelector("#totalClass").value;
+ let rollNo = event.target.querySelector("#rollNo").value;
+ let sponserName = event.target.querySelector("#sponserName").value;
 
+console.log(event.target)
 
   const userInfo = document.createElement('tr')
 userInfo.innerHTML = `<td>${username}</td>
